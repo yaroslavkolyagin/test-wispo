@@ -1,0 +1,43 @@
+.contacts
+{
+	display: flex;
+	flex-flow: column;
+	align-items: flex-end;
+	&__time
+	{
+		display: flex;
+		align-items: center;
+		font-size: $rem * 12;
+		margin-bottom: $rem * 5;
+		@media (max-width: $media-768)
+		{
+			display: none;
+		}
+		&:before
+		{
+			content: '';
+			display: block;
+			width: $rem * 12;
+			height: $rem * 12;
+			background-image: url('../img/sprite.svg#i-online');
+			background-position: center;
+			background-size: contain;
+			background-repeat: no-repeat;
+			margin-right: $rem * 3;
+		}
+	}
+	&__phone
+	{
+		font-weight: $font-main-weight-bold;
+		font-size: $rem * 26;
+		@media (max-width: $media-1024)
+		{
+			font-size: $rem * 18;
+		}
+		@media (max-width: $media-768)
+		{
+			font-weight: $font-main-weight-medium;
+			font-size: $rem * 16;
+		}
+	}
+}

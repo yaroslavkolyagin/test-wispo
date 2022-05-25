@@ -1,0 +1,136 @@
+.header
+{
+	box-shadow: $rem * 10 $rem * 10 $rem * 20 rgba(0, 0, 0, 0.1);
+	&__main
+	{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: $rem * 25 0 $rem * 20 0;
+		@media (max-width: $media-768)
+		{
+			border: none;
+			padding-bottom: 0;
+		}
+		.subnav
+		{
+			margin-right: auto;
+		}
+		.logo
+		{
+			margin-right: $rem * 40;
+			@media (max-width: $media-768)
+			{
+				margin-right: $rem * 10;
+			}
+		}
+	}
+	&__nav
+	{
+		padding-top: $rem * 20;
+		padding-bottom: $rem * 20;
+		@media (max-width: $media-768)
+		{
+			display: none;
+		}
+		&-list
+		{
+			display: flex;
+			justify-content: space-between;
+			&-item
+			{
+				position: relative;
+				display: flex;
+				align-items: center;
+				border-right: $rem * 2 solid $clr-gray-2;
+				padding: 0 $rem * 50 0 0;
+				box-sizing: border-box;
+				&:hover
+				{
+					.header__nav-list-item-text
+					{
+						color: $clr-gray-accent;
+					}
+				}
+				@media (max-width: $media-1400)
+				{
+					border-right: none;
+					padding: 0 $rem * 25 0 0;
+				}
+				&:first-child
+				{
+					padding-left: 0;
+					.header__nav-list-item-text
+					{
+						@media (max-width: $media-1024)
+						{
+							display: none;
+						}
+					}
+				}
+				&:last-child
+				{
+					border: none;
+					@media (max-width: $media-1024)
+					{
+						display: none;
+					}
+				}
+				&-link
+				{
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					margin: auto;
+					z-index: 1;
+				}
+				&-icon
+				{
+					width: $rem * 26;
+					height: $rem * 26;
+					margin-right: $rem * 10;
+				}
+				&-text
+				{
+					font-size: $rem * 16;
+					transition: $t;
+					@media (max-width: $media-1400)
+					{
+						font-size: $rem * 14;
+					}
+				}
+				&-arrow
+				{
+					margin-left: $rem * 10;
+				}
+			}
+		}
+	}
+	.header__nav-list-item-arrow
+	{
+		transform: rotate(-45deg);
+	}
+	&__mobile
+	{
+		display: none;
+		align-items: center;
+		justify-content: space-between;
+		padding: $rem * 14 0;
+		@media (max-width: $media-768)
+		{
+			display: flex;
+		}
+	}
+	&__separator
+	{
+		height: $rem * 2;
+		width: 100%;
+		background: $clr-gray-2;
+		@media (max-width: $media-768)
+		{
+			display: none;
+		}
+	}
+}

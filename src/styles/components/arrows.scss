@@ -1,0 +1,28 @@
+.arrow
+{
+	display: block;
+	width: $rem * 8;
+	height: $rem * 8;
+	transform: rotate(-135deg);
+	&--white
+	{
+		border-left: $rem * 2 solid $clr-white;
+		border-bottom: $rem * 2 solid $clr-white;
+	}
+	&--black
+	{
+		border-left: $rem * 2 solid $clr-black;
+		border-bottom: $rem * 2 solid $clr-black;
+	}
+	&--accent
+	{
+		border-left: $rem * 2 solid $clr-gray-accent;
+		border-bottom: $rem * 2 solid $clr-gray-accent;
+	}
+	&--small
+	{
+		width: $rem * 4;
+		min-width: $rem * 4;
+		height: $rem * 4;
+	}
+}

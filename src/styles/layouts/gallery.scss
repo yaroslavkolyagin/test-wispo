@@ -1,0 +1,39 @@
+.gallery
+{
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+	&__item
+	{
+		width: calc(50% - $rem * 15);
+		margin-bottom: $rem * 30;
+		@media (max-width: $media-1024)
+		{
+			width: calc(33.3% - $rem * 15);
+			order: 2;
+			margin-bottom: 0;
+			&:nth-child(2)
+			{
+				width: 100%;
+				order: 1;
+				margin-bottom: $rem * 40;
+			}
+		}
+		@media (max-width: $media-480)
+		{
+			width: 100%;
+			margin-bottom: $rem * 25;
+			&:nth-child(2)
+			{
+				margin-bottom: $rem * 30;
+			}
+		}
+	}
+	&__img
+	{
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}

@@ -1,0 +1,149 @@
+.card
+{
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	&__img
+	{
+		display: block;
+		width: 100%;
+		max-width: $rem * 223;
+		margin-bottom: $rem * 40;
+		border-radius: 50%;
+		@media (max-width: $media-1024)
+		{
+			margin-bottom: $rem * 32;
+		}
+		@media (max-width: $media-768)
+		{
+			max-width: $rem * 165;
+			margin-bottom: $rem * 32;
+		}
+		@media (max-width: $media-480)
+		{
+			max-width: $rem * 210;
+		}
+	}
+	&__name
+	{
+		font-weight: $font-main-weight-bold;
+		font-size: $rem * 26;
+		text-align: center;
+		margin-bottom: $rem * 16;
+		@media (max-width: $media-1400)
+		{
+			font-size: $rem * 22;
+		}
+		@media (max-width: $media-1024)
+		{
+			font-size: $rem * 20;
+		}
+		@media (max-width: $media-480)
+		{
+			font-size: $rem * 18;
+		}
+	}
+	&__description
+	{
+		font-size: $rem * 18;
+		line-height: $rem * 21.6;
+		text-align: center;
+		margin-bottom: $rem * 32;
+		min-height: $rem * 65;
+		@media (max-width: $media-1400)
+		{
+			font-size: $rem * 16;
+			line-height: $rem * 19.2;
+		}
+		@media (max-width: $media-1024)
+		{
+			font-size: $rem * 14;
+			line-height: $rem * 16.8;
+			margin-bottom: $rem * 24;
+		}
+		@media (max-width: $media-480)
+		{
+			max-width: $rem * 240;
+			min-height: auto;
+			margin: 0 auto $rem * 24;
+		}
+
+	}
+	&__statistics
+	{
+		display: flex;
+		align-items: center;
+		font-size: $rem * 16;
+		margin-bottom: $rem * 32;
+		@media (max-width: $media-1024)
+		{
+			font-size: $rem * 14;
+			margin-bottom: $rem * 24;
+		}
+		@media (max-width: $media-480)
+		{
+			max-width: $rem * 240;
+			margin: 0 auto $rem * 24;
+		}
+		&:before
+		{
+			content: '';
+			display: block;
+			width: $rem * 24;
+			min-width: $rem * 24;
+			height: $rem * 24;
+			margin-right: $rem * 10;
+			background-image: url('../img/sprite.svg#i-mark');
+			background-position: center;
+			background-size: contain;
+			background-repeat: no-repeat;
+			border-radius: 50%;
+			@media (max-width: $media-1024)
+			{
+				width: $rem * 16;
+				min-width: $rem * 16;
+				height: $rem * 16;
+			}
+		}
+	}
+	&__quote
+	{
+		position: relative;
+		font-size: $rem * 16;
+		line-height: $rem * 19.2;
+		background-color: $clr-gray-2;
+		padding: $rem * 16;
+		box-sizing: border-box;
+		border-radius: $rem * 15;
+		width: 85%;
+		margin-top: $rem * 10;
+		@media (max-width: $media-1024)
+		{
+			font-size: $rem * 14;
+			line-height: $rem * 16.9;
+		}
+		@media (max-width: $media-768)
+		{
+			font-size: $rem * 12;
+			line-height: $rem * 14.4;
+		}
+		@media (max-width: $media-480)
+		{
+			max-width: $rem * 240;
+			margin: 0 auto $rem * 24;
+		}
+		&:after
+		{
+			content: '';
+			position: absolute;
+			top: $rem * -10;
+			right: 0;
+			left: 0;
+			margin: auto;
+			width: $rem * 20;
+			height: $rem * 20;
+			transform: rotate(45deg);
+			background-color: $clr-gray-2;
+		}
+	}
+}

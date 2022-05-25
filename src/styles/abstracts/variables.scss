@@ -1,0 +1,23 @@
+$font-main: 'Montserrat';
+$font-main-weight-medium: 500;
+$font-main-weight-bold: 700;
+$font-main-weight-extrabold: 800;
+
+$font-sz-base: 16px;
+
+@use "sass:math";
+$rem: math.div(1rem, 16);
+
+$clr-black: #000000;
+$clr-white: #ffffff;
+$clr-gray-2: #F6F6F6;
+$clr-gray-accent: #FFA300;
+
+$t: .3s;
+
+// @media (max-width: $media-)
+$media-1600: 1600px;
+$media-1400: 1400px;
+$media-1024: 1024px;
+$media-768: 768px;
+$media-480: 480px;

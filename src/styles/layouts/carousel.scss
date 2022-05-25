@@ -1,0 +1,42 @@
+.carousel
+{
+	position: relative;
+	&__item
+	{
+		padding: 0 $rem * 15;
+		box-sizing: border-box;
+	}
+	&__nav
+	{
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+		height: $rem * 70;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__nav-btn
+	{
+		position: relative;
+		top: $rem * -15;
+		&--prev
+		{
+			left: $rem * -15;
+			@media (max-width: $media-480)
+			{
+				left: 0;
+			}
+		}
+		&--next
+		{
+			right: $rem * -15;
+			@media (max-width: $media-480)
+			{
+				right: 0;
+			}
+		}
+	}
+}

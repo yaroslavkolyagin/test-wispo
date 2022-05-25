@@ -1,0 +1,22 @@
+.promo
+{
+	&__img
+	{
+		position: absolute;
+		height: 100%;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		right: 0;
+		max-width: 45%;
+		object-fit: cover;
+		object-position: left;
+		transition: $t;
+		@media (max-width: $media-480)
+		{
+			top: 0;
+			bottom: auto;
+			height: 260px;
+		}
+	}
+}

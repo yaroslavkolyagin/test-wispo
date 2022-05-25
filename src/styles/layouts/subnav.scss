@@ -1,0 +1,35 @@
+.subnav
+{
+	display: flex;
+	@media (max-width: $media-1400)
+	{
+		display: none;
+	}
+	&__item
+	{
+		&-link
+		{
+			display: flex;
+			align-items: flex-start;
+			font-size: $rem * 14;
+			margin-right: $rem * 20;
+			color: $clr-black;
+			transition: $t;
+			&:hover
+			{
+				color: $clr-gray-accent;
+			}
+			&-icon
+			{
+				width: $rem * 14;
+				height: $rem * 14;
+				margin-right: $rem * 10;
+			}
+			&-text
+			{
+				padding-bottom: $rem * 5;
+				border-bottom: $rem * 1 solid $clr-gray-2;
+			}
+		}
+	}
+}

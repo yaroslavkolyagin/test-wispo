@@ -1,0 +1,14 @@
+.burger
+{
+	&__item
+	{
+		width: $rem * 32;
+		height: $rem * 3;
+		margin: $rem * 4 0;
+		background-color: $clr-black;
+		&:first-child
+		{
+			width: $rem * 22;
+		}
+	}
+}

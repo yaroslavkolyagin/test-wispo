@@ -1,0 +1,27 @@
+.logo
+{
+	width: $rem * 315;
+	@media (max-width: $media-768)
+	{
+		width: $rem * 170;
+	}
+	&__img
+	{
+		&--desctop
+		{
+			display: block;
+			@media (max-width: $media-768)
+			{
+				display: none;
+			}
+		}
+		&--mobile
+		{
+			display: none;
+			@media (max-width: $media-768)
+			{
+				display: block;
+			}
+		}
+	}
+}

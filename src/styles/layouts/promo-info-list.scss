@@ -1,0 +1,84 @@
+.promo-info-list
+{
+	display: flex;
+	flex-wrap: wrap;
+	gap: $rem * 30;
+	max-width: $rem * 816;
+	@media (max-width: $media-1600)
+	{
+		max-width: 50%;
+	}
+	@media (max-width: $media-480)
+	{
+		max-width: 100%;
+	}
+	&__item
+	{
+		display: flex;
+		align-items: center;
+		width: calc(50% - ($rem * 15));
+		@media (max-width: $media-768)
+		{
+			width: calc(100% - ($rem * 15));
+		}
+		@media (max-width: $media-480)
+		{
+			width: calc(50% - ($rem * 15));
+			flex-flow: column;
+		}
+	}
+	&__item-icon
+	{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: $rem * 70;
+		min-width: $rem * 70;
+		height: $rem * 70;
+		background-color: $clr-white;
+		border-radius: $rem * 10;
+		box-shadow: 0 $rem * 10 $rem * 30 $rem * -6 rgba(35, 25, 4, 0.15);
+		margin-right: $rem * 20;
+		@media (max-width: $media-1024)
+		{
+			width: $rem * 50;
+			min-width: $rem * 50;
+			height: $rem * 50;
+		}
+		@media (max-width: $media-480)
+		{
+			margin-right: 0;
+			margin-bottom: $rem * 15;
+		}
+		img
+		{
+			display: block;
+			width: $rem * 50;
+			height: $rem * 50;
+			@media (max-width: $media-1024)
+			{
+				width: $rem * 35;
+				height: $rem * 35;
+			}
+		}
+	}
+	&__item-text
+	{
+		font-size: $rem * 20;
+		line-height: $rem * 28;
+		@media (max-width: $media-1400)
+		{
+			font-size: $rem * 18;
+			line-height: $rem * 25.2;
+		}
+		@media (max-width: $media-1024)
+		{
+			font-size: $rem * 14;
+			line-height: $rem * 19.6;
+		}
+		@media (max-width: $media-480)
+		{
+			text-align: center;
+		}
+	}
+}

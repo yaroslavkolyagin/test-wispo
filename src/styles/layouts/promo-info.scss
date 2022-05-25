@@ -1,0 +1,70 @@
+.promo-info
+{
+	overflow: hidden;
+	&__img
+	{
+		position: absolute;
+		top: 0;
+		right: 0;
+		max-width: 45%;
+	}
+	&__title
+	{
+		max-width: $rem * 816;
+		margin-bottom: $rem * 60;
+		@media (max-width: $media-1600)
+		{
+			max-width: 50%;
+		}
+		// @media (max-width: $media-1400)
+		// {
+		// 	max-width: 50%;
+		// }
+		@media (max-width: $media-1024)
+		{
+			margin-bottom: $rem * 40;
+		}
+		@media (max-width: $media-480)
+		{
+			margin-bottom: $rem * 32;
+		}
+	}
+	&__text
+	{
+		max-width: $rem * 675;
+		font-size: $rem * 26;
+		line-height: $rem * 32.2;
+		margin-bottom: $rem * 60;
+		@media (max-width: $media-1400)
+		{
+			max-width: 50%;
+			font-size: $rem * 20;
+			line-height: $rem * 24;
+		}
+		@media (max-width: $media-1024)
+		{
+			font-size: $rem * 16;
+			line-height: $rem * 19.2;
+			margin-bottom: $rem * 40;
+		}
+		@media (max-width: $media-480)
+		{
+			font-size: $rem * 14;
+			line-height: $rem * 16.8;
+			margin-bottom: $rem * 32;
+		}
+	}
+	&__button
+	{
+		margin-bottom: $rem * 40;
+		@media (max-width: $media-1024)
+		{
+			margin-bottom: $rem * 32;
+		}
+		@media (max-width: $media-480)
+		{
+			width: 100%;
+			margin-bottom: $rem * 24;
+		}
+	}
+}
